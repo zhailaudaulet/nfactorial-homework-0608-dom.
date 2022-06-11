@@ -1,0 +1,99 @@
+body{
+    background-image: url(minimalist-Wallpaper.jpg);
+    background-size: cover;
+    max-width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding:0;
+}
+.bolshoiBrotha{
+    /* position: absolute; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player{
+    /* position: absolute; */
+    /* background-color: rgba(0, 0, 0, 0.562); */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+.vidbx{
+    /* position: absolute; */
+    min-width:400px;
+    min-height: 600px; 
+    background-color: white;
+    margin-top: 100px; 
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.vidsqr{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    /* height: 200px; */
+}
+
+.vidm{
+    /* display: flex; */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* height: 100%; */
+    width: 400px;
+    height: 300px;
+}
+.container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: initial;
+
+    /* position: fixed; */
+    /* background: rgba(0, 0, 0, 0.5); */
+
+}
+/* #startMus{
+    width: 100px;
+    height: 100px;
+} */
+
+/* .videoButton{
+
+    align-self: center;
+    width: 40px;
+    height: 40px;
+} */
+
+/* #btn-play-video{
+    height: 40px;
+    align-self: center !important;
+} */
+#startMus{
+    height: 60px;
+    width: 60px;
+    align-self: flex-end;
+    position: absolute;
+}
+button{
+    padding: 0;
+    background-color: transparent;
+}
+progress{
+    width: 100%;
+    align-self: center;
+}

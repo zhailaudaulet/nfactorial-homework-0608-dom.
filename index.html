@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bolshoiBrotha">
+        <div class="player">
+            <div class="vidbx">
+
+                <div class="vidsqr">
+                    <video class="vidm" id="video-id" loop mute>
+                        <source src="./Cinematic Trees Forest Nature [No Copyright video].mp4"></source>
+                    </video>
+                    <audio id="musID" src="./VALORANT, Grabbitz - Die For You.mp3" ></audio>
+                </div>
+
+
+                <div class="container" id="container">
+                    <!-- <div class="videoButton fa-2x" id="btn-play-video" on>
+                        <i class="fa-solid fa-video" data-fa-transform="shrink-4"></i>
+                    </div> -->
+
+                    <!-- <button id="btn-play-video" style="z-index: 3;">
+                        <i class="fa-solid fa-video"></i>
+                    </button>
+                     -->
+                    <button id="startMus" style="z-index: 3;">
+                        <i class="fa-solid fa-circle-play fa-3x"></i>
+                    </button>
+                    <progress id="progress"  value="0"></progress>
+
+            </div>  
+            
+        </div>
+
+    </div>
+    
+    <script>
+        const video = document.getElementById('video-id');
+        // const btnChange = document.getElementById('btn-play-video');
+        // const playVideoButton = document.getElementById('btn-play-video');
+
+
+        // playVideoButton.addEventListener('click', function() {
+        //     if(video.paused) {
+        //         video.play();
+        //         btnChange.style.backgroundColor = 'black'
+        //         btnChange.style.color = "white"
+        //     } else {
+        //         video.pause()
+        //         btnChange.style.backgroundColor = 'transparent'
+        //         btnChange.style.color = "black"
+        //     }
+        // });
+
+        const playMusicButton = document.getElementById('startMus');
+        const music = document.getElementById('musID')
+        const btnChange2 = document.getElementById('startMus');
+        const progreess = document.getElementById('progress')
+        console.log(music.currentTime, music.duration)
+   
+
+        music.addEventListener('timeupdate', function(){
+            progreess.value = music.currentTime/music.duration;
+        })
+
+        playMusicButton.addEventListener('click', function(){
+            if(music.paused){
+                video.play()
+                music.play()
+                btnChange2.style.backgroundColor = 'black'
+                btnChange2.style.color = "white"
+            } else {
+                video.pause()
+                music.pause()
+                btnChange2.style.backgroundColor = 'transparent'
+                btnChange2.style.color = "black"
+            }
+        })
+
+
+    </script>
+    
+</body>
+</html>
